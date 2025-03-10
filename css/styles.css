@@ -1,154 +1,154 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    overflow-y: scroll; /* Prevent horizontal scroll */
-    height: 100%; /* Ensure full height */
-  }
-  
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #212121; /* Dark Grey */
-    color: #E0E0E0; /* Bright Text */
-    line-height: 1.6;
-    min-height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Container */
-  .container {
-    max-width: 800px; /* Constrain content width */
-    margin: 0 auto; /* Center it */
-    padding: 20px;
-    flex: 1; /* Grow to fill available space */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Header */
-  header {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
-  }
-  
-  header p {
-    font-size: 1.2em;
-    color: #B0B0B0; /* Slightly muted */
-  }
-  
-  /* Navigation */
-  nav {
-    background-color: #303030; /* Slightly lighter grey */
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  nav a {
-    color: #FF4A00; /* Orange accent */
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    color: #FFFFFF;
-  }
-  
-  /* Main Content */
-  main {
-    flex: 1; /* Push footer down */
-  }
-  
-  .intro {
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.8em;
-    margin: 20px 0 10px;
-  }
-  
-  p {
-    margin-bottom: 15px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF4A00;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
-  }
-  
-  .btn:hover {
-    background-color: #FFFFFF;
-    color: #FF4A00;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #303030;
-    color: #B0B0B0;
-  }
-  
-  /* Add this below the existing styles */
-  
-  /* Contact Links */
-  .contact-links {
-    list-style: none;
-    padding-left: 0;
-    margin: 20px 0;
-  }
-  
-  .contact-links li {
-    margin-bottom: 10px;
-  }
-  
-  .contact-links a {
-    color: #FF4A00; /* Orange accent */
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .contact-links a:hover {
-    color: #FFFFFF;
-  }
-  
-  /* Reuse .content for consistency */
-  .content {
-    text-align: left; /* Left-align for readability */
-    width: 100%; /* Match container width */
-    max-width: 100%; /* Prevent overflow */
-    box-sizing: border-box; /* Contain padding/margins */
-  }
-  
-  /* Navigation */
-  nav a {
-    color: #FF4A00; /* Orange accent */
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    color: #FFFFFF;
-  }
-  
-  nav a.active {
-    color: #cccccc; /* Same as hover */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-y: scroll; /* Prevent horizontal scroll */
+  height: 100%; /* Ensure full height */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #212121; /* Dark Grey */
+  color: #E0E0E0; /* Bright Text */
+  line-height: 1.6;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  max-width: 800px; /* Constrain content width */
+  margin: 0 auto; /* Center it */
+  padding: 20px;
+  flex: 1; /* Grow to fill available space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #B0B0B0; /* Slightly muted */
+}
+
+/* Navigation */
+nav {
+  background-color: #303030; /* Slightly lighter grey */
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #FF4A00; /* Orange accent */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+/* Main Content */
+main {
+  flex: 1; /* Push footer down */
+}
+
+.intro {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 20px 0 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF4A00;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #FF4A00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #303030;
+  color: #B0B0B0;
+}
+
+/* Add this below the existing styles */
+
+/* Contact Links */
+.contact-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.contact-links li {
+  margin-bottom: 10px;
+}
+
+.contact-links a {
+  color: #FF4A00; /* Orange accent */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-links a:hover {
+  color: #FFFFFF;
+}
+
+/* Reuse .content for consistency */
+.content {
+  text-align: left; /* Left-align for readability */
+  width: 100%; /* Match container width */
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box; /* Contain padding/margins */
+}
+
+/* Navigation */
+nav a {
+  color: #FF4A00; /* Orange accent */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+nav a.active {
+  color: #cccccc; /* Same as hover */
+}
