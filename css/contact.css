@@ -1,0 +1,17 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wraps icons on small screens */
+    margin-top: 20px;
+  }
+  
+  .social-links img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease; /* Subtle hover effect */
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.1); /* Slight grow on hover */
+  }
