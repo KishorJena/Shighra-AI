@@ -1,1 +1,1 @@
-# Shighr.ai
+# Shighra.ai
