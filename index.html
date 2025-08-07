@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shighra.ai - Flash Chat Assistant</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shighra AI - Lightning Fast AI Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon192.png">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Shighra.ai</h1>
-      <p>Flash Chat Assistant</p>
-    </header>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-      <section class="intro">
-        <h2>Get Answers Fast with Shighra.ai Extension</h2>
-        <p>Your instant AI chat assistant, powered by Groq. Hit <strong style="background-color: #FF4A00; color: #FFFFFF; padding: 2px 6px; border-radius: 3px;">Ctrl+Shift+Space</strong> to summon it over your current tab, ask away, and keep rolling—no page-switching, no interruptions.</p>
-        
-        <ul>
-          <li>Stays on your tab—never blocks your workflow.</li>
-          <li>Quick Q&A—ask, get a short answer, done.</li>
-          <li>Lightweight—uses your Groq API key (or ours to start).</li>
-        </ul>
-        <a href="https://chromewebstore.google.com/detail/shighraai/lefcbcmbhcpplfjbmedcmmgimbgehbia" class="btn" target="_blank">Add to Chrome</a>
-        <p class="browser-support">Works on Chrome and all Chrome-based browsers:</p>
-        <div class="browser-icons">
-          <img src="assets/icons/browsers/arc.png" alt="Arc" title="Arc">
-          <img src="assets/icons/browsers/brave.png" alt="Brave" title="Brave">
-          <img src="assets/icons/browsers/chrome.png" alt="Chrome" title="Chrome">
-          <img src="assets/icons/browsers/edge.png" alt="Edge" title="Edge">
-          <img src="assets/icons/browsers/opera.png" alt="Opera" title="Opera">
-          <img src="assets/icons/browsers/vivaldi.png" alt="Vivaldi" title="Vivaldi">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="icons/icon.svg" alt="Shighra AI Logo">
+                <span>SHIGHRA AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">FEATURES</a>
+                <a href="#about">ABOUT</a>
+                <a href="https://github.com/KishorJena/ShighraAI" target="_blank">GITHUB</a>
+                <a href="https://chromewebstore.google.com/detail/shighraai/lefcbcmbhcpplfjbmedcmmgimbgehbia" target="_blank" class="cta-button">INSTALL EXTENSION</a>
+            </div>
         </div>
-      </section>
-    </main>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="icons/icon.svg" alt="Shighra AI Logo">
+            </div>
+            <h1><span class="highlight">Shighra</span> AI</h1>
+            <p class="hero-tagline">LIGHTNING FAST AI ASSISTANT FOR YOUR BROWSER</p>
+            <p class="hero-description">Experience instant AI assistance right on your current webpage. No tab switching, no interruptions—just quick, intelligent responses when you need them.</p>
+            <div class="cta-group">
+                <a href="https://chromewebstore.google.com/detail/shighraai/lefcbcmbhcpplfjbmedcmmgimbgehbia" class="primary-cta">
+                    ADD TO CHROME
+                </a>
+                <a href="#features" class="secondary-cta">LEARN MORE</a>
+            </div>
+            <div class="shortcut-hint">
+                <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd>
+                <span>to summon anywhere</span>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="aurora-effect"></div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M12 16l-4-4h8l-4 4zm0-8l4 4H8l4-4z"/></svg>
+                </div>
+                <h3>Context Menu Integration</h3>
+                <p>Right-click to access AI features with or without text selection</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                </div>
+                <h3>Smart Clipboard</h3>
+                <p>Seamless clipboard integration for quick content processing</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/></svg>
+                </div>
+                <h3>Quick Summarize</h3>
+                <p>Get instant summaries of your content with one click</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Shighra AI</h2>
+            <p>Shighra AI is a powerful VS Code extension that brings lightning-fast AI assistance to your development workflow. Built with modern technology and designed for efficiency, it helps you code smarter and faster.</p>
+        </div>
+    </section>
+
     <footer>
-      <p>© 2025 Kishor Jena. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="icons/icon48c.png" alt="Shighra AI Logo">
+                <span>Shighra AI</span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/KishorJena/ShighraAI" target="_blank">
+                    <img src="icons/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/kishorjena/" target="_blank">
+                    <img src="icons/in.png" alt="LinkedIn">
+                </a>
+                <a href="https://twitter.com/jenakishor" target="_blank">
+                    <img src="icons/x.svg" alt="X">
+                </a>
+                <a href="https://instagram.com/kishor.jena" target="_blank">
+                    <img src="icons/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
     </footer>
-  </div>
 </body>
 </html>
