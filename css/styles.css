@@ -271,6 +271,12 @@ main {
     gap: 30px;
 }
 
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .feature-card {
     background: var(--card-bg);
     padding: 32px;
@@ -339,6 +345,29 @@ main {
     color: var(--accent-purple);
 }
 
+.more-ways-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.more-ways-list li {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.more-ways-list li:hover {
+    transform: translateX(5px);
+    background-color: rgba(38, 50, 56, 0.8);
+}
+
 footer {
     padding: 60px 20px;
     text-align: center;
@@ -373,6 +402,47 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-3px);
+}
+
+/* Newbie Features Section */
+.newbie-features {
+    margin-top: 80px;
+}
+
+.newbie-features .section-header {
+    margin-bottom: 40px;
+}
+
+.newbie-features .section-header h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--primary), var(--accent-mist));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newbie-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.newbie-features .feature-card {
+    padding: 24px;
+}
+
+.newbie-features .feature-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.newbie-features .feature-card p {
+    font-size: 0.95rem;
+    color: var(--text);
+    opacity: 0.9;
 }
 
 /* Responsive Design */
@@ -448,6 +518,14 @@ footer {
 
     .section-header h2 {
         font-size: 2.5rem;
+    }
+
+    .newbie-features .section-header h3 {
+        font-size: 1.8rem;
+    }
+    
+    .newbie-features-grid {
+        grid-template-columns: 1fr;
     }
 }
 
