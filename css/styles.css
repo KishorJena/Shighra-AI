@@ -132,10 +132,18 @@ main {
 }
 
 .accent-text {
-    background: linear-gradient(135deg, var(--primary), var(--accent-mist));
+    background: linear-gradient(270deg, var(--primary), var(--accent-mist), var(--primary));
+    background-size: 600% 600%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-subtitle {
@@ -154,17 +162,18 @@ main {
 }
 
 .cta-button {
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--accent-mist));
     color: var(--white);
     padding: 16px 32px;
     text-decoration: none;
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    box-shadow: 0 0 15px rgba(255, 153, 51, 0.4);
 }
 
 .button-icon {
@@ -178,7 +187,8 @@ main {
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 153, 51, 0.6);
 }
 
 .hero-stats {
@@ -228,6 +238,17 @@ main {
 .section-header {
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
+}
+
+.section-header::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto 0;
+    background: linear-gradient(90deg, var(--primary), var(--accent-mist));
+    border-radius: 3px;
 }
 
 .section-header h2 {
@@ -255,10 +276,11 @@ main {
     padding: 32px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .feature-card::before {
@@ -274,7 +296,8 @@ main {
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) rotate3d(1, 1, 0, 3deg);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
 .feature-card:hover::before {
@@ -448,6 +471,10 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+.feature-card:nth-child(1).revealed { transition-delay: 0.1s; }
+.feature-card:nth-child(2).revealed { transition-delay: 0.3s; }
+.feature-card:nth-child(3).revealed { transition-delay: 0.5s; }
 
 /* Loading animation for hero */
 .hero-content {
