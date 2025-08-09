@@ -4,8 +4,8 @@
     --surface: #263238;
     --text: #EAEAEA;
     --secondary: #6A7B9D;
-    --accent-green: #15803D;
-    --accent-purple: #7E22CE;
+    --accent-dawn: #647693;
+    --accent-mist: #2d3ac4;
     --black: #000000;
     --white: #FFFFFF;
     --card-bg: rgba(38, 50, 56, 0.5);
@@ -91,7 +91,7 @@ nav {
 }
 
 .install-button {
-    background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+    background: var(--primary);
     padding: 12px 24px;
     border-radius: 8px;
     color: var(--white) !important;
@@ -132,7 +132,7 @@ main {
 }
 
 .accent-text {
-    background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+    background: linear-gradient(135deg, var(--primary), var(--accent-mist));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -154,7 +154,7 @@ main {
 }
 
 .cta-button {
-    background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+    background: var(--primary);
     color: var(--white);
     padding: 16px 32px;
     text-decoration: none;
@@ -234,10 +234,7 @@ main {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 16px;
-    background: linear-gradient(135deg, var(--primary), var(--accent-purple));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
 }
 
 .section-subtitle {
@@ -396,4 +393,4 @@ footer {
     }
 }
 
-/* Placeholder for future animations */
+/* End of styles */

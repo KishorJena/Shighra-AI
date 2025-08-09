@@ -16,7 +16,4 @@ Color Pallets, Theme, Scheme
     Black #000000
     White #FFFFFF
 
-    Complimentry Combination 
-    #15803D Rich green
-    #FF9933 PRIMARY COLOR - Deep Saffron
-    #7E22CE Rich purple
+  
