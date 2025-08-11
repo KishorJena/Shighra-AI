@@ -345,29 +345,7 @@ main {
     color: var(--accent-purple);
 }
 
-.more-ways-list {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.more-ways-list li {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.more-ways-list li:hover {
-    transform: translateX(5px);
-    background-color: rgba(38, 50, 56, 0.8);
-}
-
+                            
 footer {
     padding: 60px 20px;
     text-align: center;
