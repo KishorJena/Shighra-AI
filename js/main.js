@@ -53,4 +53,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Initial check
+
+    const waitlistForm = document.getElementById('waitlist-form');
+    const submitButton = document.getElementById('submit-button');
+    const responseMessage = document.getElementById('response-message');
+    const emailInput = document.getElementById('email');
+
+    if (waitlistForm) {
+        waitlistForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = emailInput.value;
+            const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx82T3MhnFwyAaYUJpK4J0hY1F5LzW6BZ1nr2k4wnWqHhfZE4yqdAZc1eqvyJrJ3L3GBw/exec";
+
+            submitButton.disabled = true;
+            submitButton.style.opacity = '0.5';
+            submitButton.textContent = 'Submitting...';
+            responseMessage.textContent = '';
+
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // To avoid CORS issues when testing locally
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email }),
+                });
+
+                // "no-cors" mode results in an opaque response, so we can't check response.ok
+                // We will assume success and provide feedback to the user.
+                responseMessage.textContent = 'Thank you for joining the waitlist!';
+                emailInput.value = '';
+
+            } catch (error) {
+                responseMessage.textContent = 'Something went wrong. Please try again.';
+            } finally {
+                submitButton.disabled = false;
+                submitButton.style.opacity = '1';
+                submitButton.textContent = 'Join Waitlist';
+            }
+        });
+    }
 });
