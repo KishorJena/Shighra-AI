@@ -3,7 +3,7 @@
     --background: #0A0A0A;
     --surface: #263238;
     --text: #EAEAEA;
-    --secondary: #6A7B9D;
+    --secondary: #8FA4C7;
     --accent-dawn: #647693;
     --accent-mist: #2d3ac4;
     --black: #000000;
@@ -342,9 +342,32 @@ main {
 }
 
 .about-content a:hover {
-    color: var(--accent-purple);
+    color: var(--accent-mist);
 }
 
+.developer-links {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.developer-links p {
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+.developer-links a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 8px;
+}
+
+.developer-links a:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
                             
 footer {
     padding: 60px 20px;
