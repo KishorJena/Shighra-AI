@@ -313,14 +313,11 @@ main {
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 16px;
-    background: linear-gradient(135deg, var(--primary), var(--accent-mist));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #F5F5F5;
 }
 
 .feature-card p {
-    color: var(--text);
+    color: #FFFFFF;
     margin-bottom: 20px;
     line-height: 1.6;
 }
